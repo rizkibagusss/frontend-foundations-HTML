@@ -1,0 +1,69 @@
+<!-- 🧠 Exercises
+Beginner:
+Identify the syntax error in this void element and rewrite it correctly so that it is "React-ready."
+The end of the line.<br\>The start of a new line.
+
+Intermediate:
+You are building a website that displays a cooking recipe. You need to write the instructions.
+Should you use one giant <p> tag with <br /> tags at the end of each step, or an <ol> (ordered list) with <li> tags? Explain why based on what we've learned about structure.
+
+Advanced:
+Look at this code snippet. A junior developer wrote this to separate two distinct blog posts on a homepage.
+
+HTML
+<h2>Blog Post 1: Learning HTML</h2>
+<p>HTML is the skeleton of the web.</p>
+<br />
+<h2>Blog Post 2: CSS Basics</h2>
+<p>CSS makes things look good.</p>
+As a senior dev reviewing this, tell the junior exactly what is wrong with using <br /> here, and what tag they should have used instead to show a "thematic break." 
+-->
+
+<i>===== Exercise Answer =======</i>
+<!-- Beginner -->
+<p>
+  The end of the line.<br />
+  The start of a new line.
+</p>
+
+<!-- Intermediate -->
+The answer is using ol with li because instructions need a step by step so the
+tag ol and li is better dan tag p and br
+
+<!-- Advanced -->
+The answer is better using hr tag for thematic break.
+
+<!-- Challenge: The Formal Receipt
+Your startup is building an e-commerce platform. You need to build the HTML structure for the top section of an email receipt.
+Combine Headings, Paragraphs, Line Breaks (<br />), and a Horizontal Rule (<hr />) to format the following raw text correctly.
+
+Requirements:
+
+The company name must be the main heading.
+
+The address must be a single paragraph, but formatted on three separate lines using the correct void element.
+
+There must be a thematic break (line) separating the address from the thank you message.
+
+The thank you message should be a standard paragraph.
+
+Make sure all your void elements use the strict trailing slash syntax.
+
+Raw Text:
+TechCorp Solutions
+123 Server Lane
+Cloud City, CA 90210
+(Thematic Break goes here)
+Thank you for upgrading to the Pro Tier. Your system limits have been increased. -->
+
+<i>====== Challenge Answer ========</i>
+<h1>TechCorp Solutions</h1>
+<p>
+  123 Server Lane<br />
+  Cloud City, CA 90210
+</p>
+<hr />
+<p>
+  Thank you for upgrading to the Pro Tier. Your system limits have been
+  increased.
+</p>

@@ -1,0 +1,79 @@
+<!-- 🔍 Challenge: The "Tech Conference Schedule" Project
+Here is your custom project assignment. You have been tasked with building the plain-text schedule for a developer conference.
+You must convert the raw text outline below into perfectly structured HTML.
+Strict Requirements:
+
+The name of the event must be the main title of the page.
+The description must be a paragraph.
+Use a thematic break to separate the description from the actual schedule.
+"Day 1" and "Day 2" must be primary section headings.
+The schedule items (Times) must be an Ordered List.
+The sub-topics under the times must be Unordered Lists nested properly inside the list items.
+Use a line break (<br />) to put the speaker's title on the line directly below their name.
+
+Raw Text to Convert:
+
+Global Tech Summit 2026
+Welcome to the premier conference for modern full-stack developers. Join us for two days of intense learning.
+(Insert Break Here)
+
+Day 1: Frontend Engineering
+
+09:00 AM - Keynote Address
+Speaker: Jane Doe (put title on next line) Lead UI Architect
+
+10:30 AM - React Fundamentals
+
+Components
+
+State Management
+
+Day 2: Backend Architecture
+
+09:00 AM - Database Scaling
+
+PostgreSQL Relational Mapping
+
+Load Balancing
+
+11:00 AM - Security Best Practices
+Speaker: John Smith (put title on next line) Head of Security -->
+
+<h1>Global Tech Summit 2026</h1>
+<p>
+  Welcome to the premier conference for modern full-stack developers. Join us
+  for two days of intense learning.
+</p>
+<hr />
+
+<h2>Day 1: Frontend Engineering</h2>
+<ol>
+  <li>
+    09:00 AM - Keynote Address <br />
+    Speaker: Jane Doe <br />
+    Lead UI Architect
+  </li>
+  <li>
+    10:30 AM - React Fundamentals
+    <ul>
+      <li>Components</li>
+      <li>State Management</li>
+    </ul>
+  </li>
+</ol>
+
+<h2>Day 2: Backend Architecture</h2>
+<ol>
+  <li>
+    09:00 AM - Database Scaling
+    <ul>
+      <li>PostgreSQL Relational Mapping</li>
+      <li>Load Balancing</li>
+    </ul>
+  </li>
+  <li>
+    11:00 AM - Security Best Practices <br />
+    Speaker: John Smith <br />
+    Head of Security
+  </li>
+</ol>

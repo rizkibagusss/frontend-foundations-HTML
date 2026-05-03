@@ -1,0 +1,99 @@
+<!-- 🧠 Exercises
+Beginner:
+Write the HTML for an Ordered List detailing your top 3 favorite movies.
+
+Intermediate:
+A junior developer is trying to create a list of their favorite programming languages, but they want a paragraph of explanation under each one. 
+Look at their code below. Is this valid HTML? If not, fix it.
+
+HTML
+<ul>
+  <li>JavaScript</li>
+  <p>I use this for the frontend.</p>
+  <li>PostgreSQL</li>
+  <p>I use this for the database.</p>
+</ul>
+
+Advanced:
+Explain why Angela's statement about personal preference regarding indentation ("You can edit this so that it all goes onto the same line, 
+or you can purposely make sure they're on different lines... This is a personal preference") is only half-true in a professional environment.
+ What do professional teams use to enforce consistent spacing and indentation instead of relying on "personal preference"? -->
+
+<!-- Beginner -->
+<h1>Top 3 Favorite Movies</h1>
+<p>Author: Rizki Bagus</p>
+<hr />
+
+<ol>
+  <li>Transformers: Dark Of the Moon</li>
+  <li>The Counjuring</li>
+  <li>The Last of Us</li>
+</ol>
+
+<!-- Intermediate -->
+<ul>
+  <li>
+    JavaScript <br />
+    I use this for the frontend.
+  </li>
+  <li>
+    PostgreSQL <br />
+    I use this for the database.
+  </li>
+</ul>
+
+or 
+
+<!-- While using br
+inside the li works perfectly, in a real-world scenario with lots of text, we
+often put paragraphs inside the list item like this: HTML -->
+
+<li>
+  <strong>JavaScript</strong>
+  <p>I use this for the frontend.</p>
+</li>
+
+Both are valid, but remember: you can put almost any tag inside an!
+
+<!-- Advanced -->
+Browser Indentation: How the website looks to the user on the screen (yes,ul indents bullet points visually). 
+Code Indentation: How the raw HTML code looks in your editor (VS Code) using spaces or tabs.
+
+  <!-- 
+ 🔍 Challenge: The Startup Tech Stack
+You are documenting the technology stack for your new startup. You need to create a nested list structure.
+
+Strict Requirements:
+The main list must be an Unordered List.
+
+There are two main categories (List Items): "Frontend" and "Backend".
+
+Inside the "Frontend" item, nest an Ordered List with two steps: "1. React", "2. Tailwind CSS".
+
+Inside the "Backend" item, nest an Ordered List with two steps: "1. Node.js", "2. PostgreSQL".
+
+Hint: Remember the House and the Rooms. The nested list must live completely inside the <li> of its parent. -->
+
+  <!-- Challenge Answer -->
+  <h1>The Startup Tech Stack</h1>
+  <hr />
+  <ul>
+    <li>
+      Frontend
+      <!-- The nested list goes INSIDE the list item, BEFORE the </li> -->
+      <ol>
+        <li>React</li>
+        <li>Tailwind CSS</li>
+      </ol>
+    </li>
+    <!-- Notice the room finally closes here -->
+
+    <li>
+      Backend
+      <ol>
+        <li>Node.js</li>
+        <li>PostgreSQL</li>
+      </ol>
+    </li>
+  </ul>
+</ul>

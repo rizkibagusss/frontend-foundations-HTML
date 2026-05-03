@@ -31,9 +31,22 @@ The answer is using ol with li because instructions need a step by step so the
 tag ol and li is better dan tag p and br
 
 <!-- Advanced -->
-The answer is better using hr tag for thematic break.
+An
+<ol>
+  or
+  <ul>
+    is a strict parent. It only allows
+    <li>
+      elements as its direct children. If you put anything else directly inside
+      an
+      <ol>
+        (like a
+        <p>, a <br />, or another</p>
+        <ul>
+          ), the browser will panic and try to guess what you meant, which often
+          breaks your layout.
 
-<!-- Challenge: The Formal Receipt
+          <!-- Challenge: The Formal Receipt
 Your startup is building an e-commerce platform. You need to build the HTML structure for the top section of an email receipt.
 Combine Headings, Paragraphs, Line Breaks (<br />), and a Horizontal Rule (<hr />) to format the following raw text correctly.
 
@@ -56,14 +69,19 @@ Cloud City, CA 90210
 (Thematic Break goes here)
 Thank you for upgrading to the Pro Tier. Your system limits have been increased. -->
 
-<i>====== Challenge Answer ========</i>
-<h1>TechCorp Solutions</h1>
-<p>
-  123 Server Lane<br />
-  Cloud City, CA 90210
-</p>
-<hr />
-<p>
-  Thank you for upgrading to the Pro Tier. Your system limits have been
-  increased.
-</p>
+          <i>====== Challenge Answer ========</i>
+          <h1>TechCorp Solutions</h1>
+          <p>
+            123 Server Lane<br />
+            Cloud City, CA 90210
+          </p>
+          <hr />
+          <p>
+            Thank you for upgrading to the Pro Tier. Your system limits have
+            been increased.
+          </p>
+        </ul>
+      </ol>
+    </li>
+  </ul>
+</ol>

@@ -1,0 +1,80 @@
+<!-- 🧠 Exercises
+Beginner:
+Write the HTML code to create a link to [https://www.youtube.com](https://www.youtube.com). 
+The text the user should see and click on is "Watch my tutorials".
+
+Intermediate:
+A junior developer is trying to link to Wikipedia, but the link is broken. Find the bug and fix the code.
+
+HTML
+<a href="www.wikipedia.org">Go to Wikipedia</a>
+
+Advanced:
+Angela mentioned the start attribute for Ordered Lists (ol). Go to the MDN Web Docs (search "MDN ol element") 
+and find another specific attribute you can apply to an ol.
+Tell me the name of the attribute, what it does, and write an example of how to use it in code. -->
+
+<!-- Beginner Answer -->
+<h2>My Youtube Links</h2>
+<ul>
+  <li><a href="https://www.youtube.com">Watch my Tutorials</a></li>
+</ul>
+
+<!-- Intermediate Answer -->
+because there is not include https:// or http://
+<a href="https://www.wikipedia.org">Go to Wikipedia</a>
+
+<!-- Advanced Answer -->
+the attribute: compact, reversed, start, type
+<ol type="i">
+  <li>Introduction</li>
+  <li>List of Grievances</li>
+  <li>Conclusion</li>
+</ol>
+<br />
+<p>Finishing places of contestants not in the winners' circle:</p>
+<ol start="4">
+  <li>Speedwalk Stu</li>
+  <li>Saunterin' Sam</li>
+  <li>Slowpoke Rodriguez</li>
+</ol>
+<hr />
+<!-- Challenge: The "Resource Hub" Project
+You are building the "Help & Resources" page for your new IT Infrastructure tool.
+
+Strict Requirements:
+
+The main heading must be "Developer Resources".
+
+You must create an Ordered List (<ol>).
+
+Crucial Constraint: The list must start at the number 10.
+
+The list must contain three items.
+
+Each list item must contain an anchor tag (<a>) linking to a different website.
+
+Item 10: "Official React Documentation" (Link to: [https://react.dev/](https://react.dev/))
+
+Item 11: "MDN Web Docs" (Link to: [https://developer.mozilla.org/](https://developer.mozilla.org/))
+
+Item 12: "Stack Overflow" (Link to: [https://stackoverflow.com/](https://stackoverflow.com/))
+
+Senior Dev Bonus (Optional): Add a global attribute to the React link that makes it open in a new tab. 
+(Hint: You might need to Google "HTML link open in new tab attribute"). -->
+
+<h1>Developer Resources</h1>
+
+<ol start="10">
+  <li>
+    <a href="https://react.dev/" target="_blank">
+      "Official React Documentation"</a
+    >
+  </li>
+  <li>
+    <a href="https://developer.mozilla.org/" target="_blank"> "MDN Web Docs"</a>
+  </li>
+  <li>
+    <a href="https://stackoverflow.com/" target="_blank"> "Stack Overflow"</a>
+  </li>
+</ol>

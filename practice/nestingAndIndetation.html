@@ -1,0 +1,115 @@
+<!-- 🧠 Exercises
+Beginner:
+Look at this code snippet. Is the indentation correct? If not, rewrite it so the indentation visually matches the parent-child relationship.
+
+HTML
+<ol>
+<li>Step 1</li>
+<li>Step 2
+<ul>
+<li>Sub-step A</li>
+</ul>
+</li>
+</ol>
+Intermediate:
+You are reviewing a junior developer's code. They complain that "Item C" is showing up as a numbered item (like "3.") instead of a main bullet point. 
+Find the missing tag that is causing this bug.
+
+HTML
+<ul>
+  <li>Item A</li>
+  <li>Item B
+    <ol>
+      <li>Item B1</li>
+      <li>Item B2</li>
+  <li>Item C</li>
+</ul>
+Advanced:
+Explain in your own words how the faint vertical lines in VS Code (called "indent guides") help you debug HTML errors. 
+Give a specific scenario of what an error looks like when using those guides. -->
+
+<!-- Beginner Answer-->
+<ol>
+  <li>Step 1</li>
+  <li>
+    Step 2
+    <ul>
+      <li>Sub-step A</li>
+    </ul>
+  </li>
+  <!-- Notice how this wraps around the <ul> -->
+</ol>
+
+<!-- Intermediate Answer -->
+<ul>
+  <li>Item A</li>
+  <li>
+    Item B
+    <ol>
+      <li>Item B1</li>
+      <li>Item B2</li>
+    </ol>
+    <!-- Missing Tag 1 -->
+  </li>
+  <!-- Missing Tag 2 -->
+  <li>Item C</li>
+</ul>
+
+<!-- Advanced Answer -->
+If you write bad HTML, the browser just tries its best to guess what you meant,
+which often breaks your layout silently. That is why those faint vertical lines
+in VS Code are so important—they act as your visual guide to see if an
+li or ul forgot its closing tag!
+
+    <!-- 🔍 Challenge: The File System
+You are building the UI for a web-based code editor (like VS Code in the browser). 
+You need to represent a project's folder structure using deeply nested lists.
+
+Translate this raw folder structure into properly nested, perfectly indented HTML.
+
+Folders with items inside should act as the parent <li>.
+
+You must use Unordered Lists (<ul>) for everything.
+
+The Folder Structure:
+
+📁 src
+
+📁 components
+
+📄 Header.js
+
+📄 Footer.js
+
+📄 App.js
+
+📁 public
+
+📄 index.html
+
+Take your time. Remember to hit "Enter" after the text in an <li> to drop down and start the nested <ul>! -->
+
+<h1>The Folder Structure</h1>
+    <ul>
+      <li>
+        📁 src
+        <ul>
+          <li>
+            📁 components
+            <ul>
+              <li>📄 Header.js</li>
+              <li>📄 Footer.js</li>
+            </ul>
+          </li>
+          <li>📄 App.js</li>
+        </ul>
+      </li>
+      <li>
+        📁 public
+        <ul>
+          <li>📄 index.html</li>
+        </ul>
+      </li>
+    </ul>
+  </ul>
+</li>

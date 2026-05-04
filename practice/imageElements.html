@@ -1,0 +1,62 @@
+<!-- 🧠 Exercises
+Beginner:
+Write the HTML code to display an image. Use this URL for the source: [https://picsum.photos/200](https://picsum.photos/200).
+The alt text should describe "A random square image from Picsum". Remember your void element syntax!
+
+Intermediate:
+A junior developer wrote this code. It is syntactically broken. Fix it.
+<image src="myphoto.jpg" alt="A photo of me"></image>
+
+Advanced:
+Explain why leaving the alt attribute completely empty (like this: alt="") is sometimes considered the correct thing to do 
+by senior developers in very specific situations. (Hint: Think about images that are purely for decoration, 
+like a squiggly line under a header, and how a screen reader should handle them). -->
+
+<!-- Beginner Answer -->
+<h1>Beginner Level Exercises</h1>
+<img src="https://picsum.photos/200" alt="A random square image from Picsum" />
+
+<!-- Intermediate Answer -->
+<h1>Intermediate Level Exercises</h1>
+<img src="myphoto.jpg" alt="A photo of me" />
+
+<!-- Advanced Answer -->
+<h1>Advanced Level Exercises</h1>
+<p>
+  We use alt="" for decorative images. Imagine your website has a tiny graphic
+  of a squiggly line just to make the page look pretty. <br />
+  If you write alt="squiggly line", a blind user using a screen reader is forced
+  to listen to "Image: squiggly line." <br />
+  It wastes their time and adds no value to the content. Setting alt="" tells
+  the screen reader, "This image is just decoration, skip it entirely.
+</p>
+
+<!-- 🔍 Challenge: The "Team Directory" Project
+You are building a basic staff directory page for your IT team. You need to combine Headings, Paragraphs, Links, and Images.
+
+Strict Requirements:
+
+The main heading should be "IT Operations Team".
+
+Use a thematic break under the heading.
+
+Create an Unordered List.
+
+Inside the list, add an item for "Bagus (Systems Engineer)".
+
+Inside Bagus's list item, nest an image acting as his profile picture. Use this URL:
+ [https://picsum.photos/150](https://picsum.photos/150) and write appropriate alt text.
+
+Senior Dev Bonus: Wrap Bagus's name ("Bagus (Systems Engineer)") in an anchor tag that links to mailto:bagus@company.com. 
+This is how you create an email link in HTML! -->
+
+<h1>IT Operations Team</h1>
+<hr />
+<ul>
+  <li>
+    <a href="mailto:bagus@company.com">Bagus (System Engineer)</a>
+    <br />
+    <!-- Adding a break so the image drops to the next line -->
+    <img src="https://picsum.photos/150" alt="Profile picture of Bagus" />
+  </li>
+</ul>

@@ -1,0 +1,62 @@
+<!-- 🧠 Exercises
+Beginner:
+What is the purpose of the <title> tag, and where does that text actually appear when you load the website in a browser?
+
+Intermediate:
+A junior developer is confused. They wrote an <h1> tag with their name, but it's not showing up on the webpage. Look at their code below and identify the bug.
+
+HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Site</title>
+  <h1>Hello, I am Bagus</h1>
+</head>
+<body>
+</body>
+</html> -->
+
+<!-- Beginner Answer -->
+title is used to defines the text shown in the browser's title bar or page tab
+<!-- Intermediate Answer -->
+Because he use h1 inside tag head, so you can replace to the inside body tag
+
+<!-- 🍔 Challenge: Build Your Burger
+Angela gave you a creative challenge to practice nesting and indentation using fake HTML tags to build a burger.
+
+Requirements:
+
+Use the ! + Enter shortcut in VS Code to generate a real HTML boilerplate. (Or just type it out if you want the practice).
+
+Inside the <body>, invent your own fake tags to build a burger.
+
+You must have a top bun and a bottom bun.
+
+You must have at least 3 ingredients sandwiched in between (e.g., <patty>, <cheese>, <lettuce>).
+
+Senior Dev Polish: Make sure your indentation is perfect so I can clearly see the ingredients nested inside the buns! -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burger</title>
+  </head>
+  <body>
+    <ul>
+      <li>
+        <Bun>
+          <ul>
+            <li><patty></patty></li>
+            <li><tomatoes></tomatoes></li>
+            <li><cheese></cheese></li>
+            <li><mayonaise></mayonaise>></li>
+            <li><lettuce></lettuce></li>
+          </ul>
+        </Bun>
+      </li>
+    </ul>
+  </body>
+</html>

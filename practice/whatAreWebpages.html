@@ -1,0 +1,58 @@
+<!-- 🧠 Exercises
+Let's test your understanding of wrapping elements and pathing. Assume you are writing code 
+inside your index.html file, and your folder structure matches the interactive widget above.
+
+Beginner:
+Write the HTML code to create a standard text link that says "Our Services" and 
+links to a file named services.html located inside the public/ folder.
+
+Intermediate:
+You want to create a clickable button using an image. Write the HTML to display button.png (located in assets/images/) and 
+wrap it in an anchor tag that links to contact.html (located in public/).
+
+Advanced:
+A junior developer is currently writing code inside public/about.html. They want to add a link back to the homepage. 
+They wrote: <a href="./index.html">Back Home</a>. When they click it, the browser says "404 Not Found". 
+Explain to the junior developer why this path is wrong, and write the correct path. -->
+
+<!-- Beginner Answer -->
+<a href="./folder/services.html">Our Services</a>
+<!-- Intermediate Answer -->
+<a href="./public/contact.html"
+  ><img src="./assets/images/button.png" alt="button display"
+/></a>
+<!-- Advanced Answer -->
+Because they are not in the same folder, you can write like this
+<a href="../index.html">Back Home</a>
+
+<!-- 🔍 Challenge: The Global Header
+Every major website (like Amazon or Google) has a global header at the top of the screen. 
+You are going to build one for our fictional company.
+
+You are writing code inside the index.html file.
+
+Strict Requirements:
+
+Create a horizontal rule (<hr />) at the very bottom of your code to act as a separator.
+
+Create an Unordered List to act as your navigation menu.
+
+The list must contain three items.
+
+Item 1: Must be the company logo. Use the Wrapper Technique! The image source is [https://picsum.photos/50](https://picsum.photos/50). 
+The link must point to ./index.html. (Remember your alt text).
+
+Item 2: A text link that says "Meet the Team". It must link to ./public/team.html.
+
+Item 3: A text link that says "Get in Touch". It must link to ./public/contact.html. -->
+
+<hr />
+<ul>
+  <li>
+    <a href="./index.html"
+      ><img src="https://picsum.photos/50" alt="company logo"
+    /></a>
+  </li>
+  <li><a href="./public/team.html">Meet the team</a></li>
+  <li><a href="./public/contact.html">Get in Touch</a></li>
+</ul>

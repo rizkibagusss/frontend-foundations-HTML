@@ -1,0 +1,39 @@
+🔍 Challenge: The "Tech Lab" Docs
+Your goal is to build a 3-page interconnected website. You must create the folder structure exactly as outlined below, generate proper boilerplates for every page, and ensure no links are broken.
+
+The Required Folder Structure:
+
+Plaintext
+tech-lab/
+├── index.html
+└── public/
+    ├── nlp-systems.html
+    └── nvme-troubleshooting.html
+
+    
+Page 1: The Home Page (index.html)
+This is the root of your project.
+
+Boilerplate: Generate the standard HTML5 boilerplate. Change the title to Tech Lab Home.
+Header: Create an <h1> that says "Hardware & AI Research Lab".
+Navigation: Create an unordered list containing two text links:
+Link to the NLP Systems page.
+Link to the NVMe Troubleshooting page.
+Visual Links (Wrapper Technique): Below the navigation, add two images (use https://picsum.photos/200 and https://picsum.photos/201). Wrap each image in an anchor tag so clicking the first image goes to the NLP page, and clicking the second image goes to the NVMe page.
+
+Page 2: NLP Systems (public/nlp-systems.html)
+This page details your research into Artificial Intelligence.
+
+Boilerplate: Generate the boilerplate. Title: NLP Smart Devices.
+Navigation Back: At the very top of the <body>, add a link that says "⬅ Back to Hub". This must correctly link back to index.html using the ../ notation.
+Content: Add an <h2> titled "Natural Language Processing". Underneath, add an ordered list detailing three real-world implementations of NLP in smart speakers.
+
+Page 3: Hardware Diagnostics (public/nvme-troubleshooting.html)
+This page acts as a log for hardware failures.
+
+Boilerplate: Generate the boilerplate. Title: Hardware Diagnostics.
+Navigation Back: At the very top, add the same "⬅ Back to Hub" link pointing to index.html.
+Content: Add an <h2> titled "Critical System Failure Log". Add a paragraph explaining a recent kernel panic caused by a 3rd party NVMe controller on an Intel SSD.
+
+Your Assignment
+Treat this like a real-world coding ticket. You need to prove you can navigate down into the public/ folder from the root, and successfully navigate back up ../ to the root from the sub-pages.
